@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Product =[
+            {
+                product_id:32412,
+                product_name: "BMV",
+                price:1000,
+            },
+            {
+                product_id:42312,
+                product_name: "Audio",
+                price:2000,
+            },
+            {
+                product_id:53423,
+                product_name: "07",
+                price:120,
+            },
+            {
+                product_id:78656,
+                product_name: "Tesla",
+                price:3000,
+            },
+            {
+                product_id:56775,
+                product_name: "X5",
+                price:2020,
+            },
+        ] 
+        console.log(Product);
+        let count=0
+        let sum=0
+        for(let i=0; i<Product.length;i++){
+            if( Product[i].product_id%2==1){
+                sum=sum+Product[i].price
+                count++
+            }
+        }console.log(sum/count);
+
+    </script>
+</body>
+</html>
